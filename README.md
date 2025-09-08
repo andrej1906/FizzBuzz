@@ -1,7 +1,6 @@
-#Andrej Prekajski
 # CSC207 Week 1 Lab Activity: Fizz Buzz!
 Let's start off our exploration of Java with a classic programming challenge, Fizz Buzz!
-
+Andrej
 But first, let's get you your own copy of this codebase to work with.
 
 ## Task 0 Forking a public repository on GitHub
