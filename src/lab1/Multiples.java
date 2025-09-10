@@ -2,14 +2,17 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        int count = 0;
+        int n = 1000;
+        int a = 3;
+        int b = 5;
 
-        for (int i = 1; i < 1000; i++) {
-            if (i % 3 == 0 || i % 5 == 0) {
-                count++;
-            }
-        }
+        int count = multiples(n, a, b);
+        System.out.println("There are " +count+ " multiples of" +a+ " or " +b+ " below " +n+ ".");
+    }
 
-        System.out.println("Number of multiples of 3 or 5 below 1000: " + count);
+    public static int multiples(int n, int a, int b) {
+        return (int) java.util.stream.IntStream.range(1, n)
+                .filter(i -> i % a == 0 || i % b == 0)
+                .count();
     }
 }
